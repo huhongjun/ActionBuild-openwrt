@@ -8,4 +8,4 @@ mkdir -p files/etc/uci-defaults
 cp $(dirname $0)/uci-scripts/* files/etc/uci-defaults/
 
 #更改默认包
-sed -i 's/dnsmasq/dnsmasq-full/g' include/target.mk
+# sed -i 's/dnsmasq/dnsmasq-full/g' include/target.mk

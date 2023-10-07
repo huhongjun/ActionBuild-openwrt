@@ -14,12 +14,7 @@ mv ./openwrt/* ./
 
 # 下载插件
 SUPPLY_DIR=supply-packages
-echo "src-link supply $PWD/$SUPPLY_DIR" >> feeds.conf.default
+echo "src-link supply $PWD/$SUPPLY_DIR" >>feeds.conf.default
 mkdir $SUPPLY_DIR && cd $SUPPLY_DIR
 git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon.git
 git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config.git
-git clone --depth 1 https://github.com/yichya/luci-app-xray.git
-git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages.git pw-dependencies
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
-svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
-svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
